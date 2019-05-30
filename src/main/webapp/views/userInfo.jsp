@@ -9,13 +9,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="/style/WorkPayStyleList.css">
+    <link rel="stylesheet" href="/style/userstyle.css">
     <title>Информация об выручке</title>
 </head>
 <body>
-    <div class="w3-container w3-blue-grey w3-opacity w3-right-align">
-        <h1>Super app!</h1>
+    <header class="header-user">
+        <h3>Все что тебе нужно знать!</h3>
+    </header>
+    <div class="login">
+
     </div>
+
 </body>
 </html>
