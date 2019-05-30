@@ -18,6 +18,7 @@ public class ModelUsers {
     private ModelUsers() {
         model = new ArrayList<>();
         model.add(new User("admin","admin"));
+        model.add(new User("User","User","TestName"));
     }
 
     public void add (User user) {
@@ -33,6 +34,11 @@ public class ModelUsers {
     }
 
     public List<String> list (){
-        return model.stream().map(User::getName).collect(Collectors.toList());
+        List<String> result = new ArrayList<>();
+        for (User user :
+                model) {
+            result.add(user.getLogin() + " | " + user.getPassword());
+        }
+        return result;
     }
 }

@@ -21,7 +21,6 @@
             <p><input type="password" name="password" value="" placeholder="Пароль"></p>
             <div class="Error">
                 <%
-
                     String error =(String) request.getAttribute("error");
                     if (!(error == null))
                     out.print(error);
