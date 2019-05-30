@@ -12,7 +12,7 @@
     <h1>Добро пожаловать на <b>WorkPay</b></h1>
     <div class="clr"></div>
 </div>
-
+<!---  ОНО БЛЯТЬ РАБОТАЕТ -->
 <section class="container">
     <div class="login">
         <h1>Войдите в свой личный кабинет</h1>
