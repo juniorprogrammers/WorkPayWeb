@@ -16,7 +16,7 @@
 <section class="container">
     <div class="login">
         <h1>Войдите в свой личный кабинет</h1>
-        <form method="post" action="/login">
+        <form class="formin" method="post" action="/login">
             <p><input type="text" name="login" value="" placeholder="Логин"></p>
             <p><input type="password" name="password" value="" placeholder="Пароль"></p>
             <div class="Error">
@@ -32,8 +32,9 @@
                     <input type="checkbox" name="remember_me" id="remember_me">
                     Запомнить меня
                 </label>
+            <div><button class="design" onclick="location.href='/list'">Войти в эту задницу</button> </div>
             </p>
-            <div><button class="design" onclick="location.href='/list'">Войти</button> </div>
+
         </form>
     </div>
 </section>
