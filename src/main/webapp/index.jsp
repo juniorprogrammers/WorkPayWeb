@@ -12,7 +12,7 @@
     <h1>Добро пожаловать на <b>WorkPay</b></h1>
     <div class="clr"></div>
 </div>
-<!---  ОНО БЛЯТЬ РАБОТАЕТ -->
+<!---  ОНО БЛЯТЬ РАБОТАЕТ-->
 <section class="container">
     <div class="login">
         <h1>Войдите в свой личный кабинет</h1>
@@ -33,7 +33,7 @@
                     Запомнить меня
                 </label>
             </p>
-            <div><button onclick="location.href='/list'">Войти</button> </div>
+            <div><button class="design" onclick="location.href='/list'">Войти</button> </div>
         </form>
     </div>
 </section>

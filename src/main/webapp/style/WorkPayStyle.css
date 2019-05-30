@@ -157,7 +157,7 @@ input[type=text]:focus, input[type=password]:focus {
     outline-offset: 0;
 }
 
-input[type=submit] {
+.design {
     padding: 0 18px;
     height: 29px;
     font-size: 12px;
