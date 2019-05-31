@@ -7,19 +7,32 @@ body {
 .header-user{
     text-align: center;
 }
-.login {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.container_div {
+    padding: 0 10px;
+}
+.login, .news, .message {
+
     position: relative;
-    margin: 50px auto 0 auto;
     padding: 20px 20px 20px;
-    max-width: 500px;
-    min-width: 300px;
+    width: calc(100% - 40px);
+    min-width: 250px;
     min-height: 250px;
+    height: auto;
     background: aliceblue;
     border-radius: 5px;
     box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+.login {
+    height: auto;
+
+}
 /* рамка вокруг формы */
-.login:before {
+.login:before, .news:before, .message:before{
     content: '';
     position: absolute;
     top: -8px;
@@ -29,4 +42,42 @@ body {
     z-index: -1;
     background: rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+}
+
+.container h2 {
+    margin: -20px -20px 21px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2e2e2e;
+    text-align: center;
+    background: #e7e7e7;
+    border-bottom: 1px solid #5b5b5b;
+    border-radius: 5px 5px 0 0;
+}
+.info p{
+    margin-top: 20px;
+    font-size: calc(1em + 0.7vw);
+}
+.skills {
+    width: 100%;
+    background: #9eb9c2;
+    height: 35px;
+}
+.user-skills {
+    width: 60%; /* вот тут вместо 60% должно как то ставиться автоматически, нужно это почитать*/
+    background: chartreuse;
+    text-align: center;
+    height: calc(100% - 10px);
+    padding: 5px 0;
+}
+
+.month_plan {
+
+    font-size: 25px;
+    text-align: center;
+    color: #2E2E2E;
+}
+.info {
+    font-size: 120%;
 }
