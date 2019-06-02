@@ -13,7 +13,7 @@
     <title>Информация об выручке</title>
 </head>
 <body>
-    <header class="header-user">
+    <header class="header_wind">
         <h1>Все что тебе нужно знать!</h1>
     </header>
     <div class="container">

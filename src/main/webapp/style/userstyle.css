@@ -4,7 +4,8 @@ body {
     color: #404040;
     background: #0cc8f8;
 }
-.header-user{
+.header-wind{
+    min-height: 150px;
     text-align: center;
 }
 .container {
