@@ -37,11 +37,11 @@
   <!-- mainAdminServlet -->
 
   <servlet>
-    <servlet-name>MainAdminServlet</servlet-name>
-    <servlet-class>app.servlets.MainAdminServlet</servlet-class>
+    <servlet-name>MainAdminListServlet</servlet-name>
+    <servlet-class>app.servlets.MainAdminListServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>MainAdminServlet</servlet-name>
+    <servlet-name>MainAdminListServlet</servlet-name>
     <url-pattern>/mainAdmin</url-pattern>
   </servlet-mapping>
 </web-app>
