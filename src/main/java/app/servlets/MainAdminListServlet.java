@@ -17,10 +17,11 @@ public class MainAdminListServlet extends HttpServlet {
         String fio = httpServletRequest.getParameter("fio");
         String login = httpServletRequest.getParameter("login");
         String password = httpServletRequest.getParameter("password");
+        User user = new User(login,password,fio);
         ModelUsers modelUsers = ModelUsers.getInstance();
         List<User> users = modelUsers.getModel();
         httpServletRequest.setAttribute("users", users);
-        if (!(fio==null&&login==null&&password==null)) {
+        if (!(user.getName().equals("")||user.getPassword().equals("")||user.getLogin().equals(""))) {
             ModelUsers.getInstance().add(new User(login,password,fio));
             RequestDispatcher requestDispatcher = httpServletRequest.getRequestDispatcher("/views/mainAdmin.jsp");
             requestDispatcher.forward(httpServletRequest,httpServletResponse);
@@ -28,11 +29,6 @@ public class MainAdminListServlet extends HttpServlet {
             httpServletRequest.setAttribute("error","Заполните все поля");
             RequestDispatcher requestDispatcher = httpServletRequest.getRequestDispatcher("/views/mainAdmin.jsp");
             requestDispatcher.forward(httpServletRequest,httpServletResponse);
-        }
-
-        if (httpServletRequest.getAttribute("del")!=null) {
-            Integer id = (Integer)httpServletRequest.getAttribute("del");
-            modelUsers.del(modelUsers.getUser(id));
         }
     }
 

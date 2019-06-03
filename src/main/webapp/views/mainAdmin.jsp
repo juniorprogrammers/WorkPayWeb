@@ -57,7 +57,13 @@
                         <button type="submit" class="createpassword">Придумать пароль</button>
                     </div>
                 </div>
-
+                <div class="Error">
+                    <%
+                        String error =(String) request.getAttribute("error");
+                        if (!(error == null))
+                            out.print(error);
+                    %>
+                </div>
                 <button type="submit" class="btn_add">Добавить</button>
             </form>
         </div>
@@ -80,9 +86,9 @@
                                 "<td>"+user.getName()+"</td>\n" +
                                 "<td>"+user.getLogin()+"</td>\n" +
                                 "<td>"+user.getPassword()+"</td>\n" +
-                                "<td class=\"del\"><form method=\"post\" action=\"/mainAdmin\"><button type=\"submit\">X</button></form></td>\n" +
+                                "<td class=\"del\"><form method=\"post\" action=\"/mainAdminDel\"><button type=\"submit\">X</button></form></td>\n" +
                                 "</tr>");
-                        request.setAttribute( "del",id);
+                        session.setAttribute( "del",id);
                     }
                 %>
 

@@ -34,7 +34,7 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
-  <!-- mainAdminServlet -->
+  <!-- mainAdminListServlet -->
 
   <servlet>
     <servlet-name>MainAdminListServlet</servlet-name>
@@ -43,5 +43,15 @@
   <servlet-mapping>
     <servlet-name>MainAdminListServlet</servlet-name>
     <url-pattern>/mainAdmin</url-pattern>
+  </servlet-mapping>
+
+  <!-- mainAdminDelServlet -->
+  <servlet>
+    <servlet-name>MainAdminDelServlet</servlet-name>
+    <servlet-class>app.servlets.MainAdminDelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainAdminDelServlet</servlet-name>
+    <url-pattern>/mainAdminDel</url-pattern>
   </servlet-mapping>
 </web-app>
