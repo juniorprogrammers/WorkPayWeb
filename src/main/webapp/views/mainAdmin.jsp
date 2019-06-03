@@ -80,7 +80,7 @@
                                 "<td>"+user.getName()+"</td>\n" +
                                 "<td>"+user.getLogin()+"</td>\n" +
                                 "<td>"+user.getPassword()+"</td>\n" +
-                                "<td class=\"del\"><a href=\"#"+id+"\">X</a></td>\n" +
+                                "<td class=\"del\"><form method=\"post\" action=\"/mainAdmin\"><button type=\"submit\">X</button></form></td>\n" +
                                 "</tr>");
                         request.setAttribute( "del",id);
                     }

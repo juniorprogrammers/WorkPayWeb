@@ -286,3 +286,7 @@ margin:1em;
 .example-1 .label:hover i,.example-1 .label:hover .title{
     color:#000
 }
+
+.gotouser {
+    float: right;
+}
