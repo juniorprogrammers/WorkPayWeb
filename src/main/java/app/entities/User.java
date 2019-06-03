@@ -7,7 +7,7 @@ public class User {
     private String name;
     private String password;
     private static User admin = new User("admin", "admin", "admin");
-// Rjvty
+
     public User(String login, String password, String name) {
         this.login = login;
         this.name = name;
