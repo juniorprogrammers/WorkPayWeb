@@ -72,14 +72,17 @@
                     <th class="del"></th>
                 </tr>
                 <%
+                    int i = 0;
                     for (User user :
                             list) {
-                        out.print("   <tr>\n" +
+                        Integer id = list.indexOf(user);
+                        out.print("<tr>\n" +
                                 "<td>"+user.getName()+"</td>\n" +
                                 "<td>"+user.getLogin()+"</td>\n" +
                                 "<td>"+user.getPassword()+"</td>\n" +
-                                "<td class=\"del\"><a href=\"#\">X</a></td>\n" +
+                                "<td class=\"del\"><a href=\"#"+id+"\">X</a></td>\n" +
                                 "</tr>");
+                        request.setAttribute( "del",id);
                     }
                 %>
 

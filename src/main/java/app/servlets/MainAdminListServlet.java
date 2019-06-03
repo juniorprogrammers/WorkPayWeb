@@ -29,5 +29,15 @@ public class MainAdminListServlet extends HttpServlet {
             RequestDispatcher requestDispatcher = httpServletRequest.getRequestDispatcher("/views/mainAdmin.jsp");
             requestDispatcher.forward(httpServletRequest,httpServletResponse);
         }
+
+        if (httpServletRequest.getAttribute("del")!=null) {
+            Integer id = (Integer)httpServletRequest.getAttribute("del");
+            modelUsers.del(modelUsers.getUser(id));
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+
     }
 }

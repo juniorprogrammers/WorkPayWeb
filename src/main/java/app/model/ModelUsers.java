@@ -25,6 +25,12 @@ public class ModelUsers {
         model.add(user);
     }
 
+    public void del (User user) {model.remove(user);}
+
+    public User getUser (Integer id) {
+        return model.get(id);
+    }
+
     public User getAdmin () {
         return this.model.get(0);
     }
