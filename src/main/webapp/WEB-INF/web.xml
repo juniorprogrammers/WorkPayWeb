@@ -33,4 +33,15 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+
+  <!-- mainAdminServlet -->
+
+  <servlet>
+    <servlet-name>MainAdminServlet</servlet-name>
+    <servlet-class>app.servlets.MainAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainAdminServlet</servlet-name>
+    <url-pattern>/mainAdmin</url-pattern>
+  </servlet-mapping>
 </web-app>
