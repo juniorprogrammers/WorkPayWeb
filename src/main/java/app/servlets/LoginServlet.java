@@ -26,7 +26,6 @@ public class LoginServlet extends HttpServlet {
         ModelUsers modelUsers = ModelUsers.getInstance();
         List<User> users = modelUsers.getModel();
         httpServletRequest.setAttribute("users", users);
-        httpServletRequest.getSession();
         if (!(user.getLogin().equals("")&&user.getPassword().equals(""))) {
             if (user.equals(ModelUsers.getInstance().getAdmin())) {
                 RequestDispatcher requestDispatcher = httpServletRequest.getRequestDispatcher("views/mainAdmin.jsp");
