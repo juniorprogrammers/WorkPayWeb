@@ -1,4 +1,5 @@
-<%--
+<%@ page import="app.entities.User" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Ilya
   Date: 30.05.2019
@@ -29,11 +30,13 @@
             <p><a href="#new">Добавить новость</a></p>
         </div>
     </nav>
-
+<%
+    List<User> list = (List<User>) request.getAttribute("users");
+%>
     <div class="cross">
         <div class="add_user" id="add">
             <h2>Добавление нового работника</h2>
-            <form method="post">
+            <form method="post" action="/mainAdmin">
                 <div class="new_user">
                     <div class="field">
                         <label for="fio">Введите фамилию и имя:</label>
@@ -68,6 +71,17 @@
                     <th>Пароль</th>
                     <th class="del"></th>
                 </tr>
+                <%
+                    for (User user :
+                            list) {
+                        out.print("   <tr>\n" +
+                                "<td>"+user.getName()+"</td>\n" +
+                                "<td>"+user.getLogin()+"</td>\n" +
+                                "<td>"+user.getPassword()+"</td>\n" +
+                                "<td class=\"del\"><a href=\"#\">X</a></td>\n" +
+                                "</tr>");
+                    }
+                %>
 
             </table>
             </div>

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 public class LoginServlet extends HttpServlet {
     @Override
@@ -22,6 +23,9 @@ public class LoginServlet extends HttpServlet {
         String login = httpServletRequest.getParameter("login");
         String password = httpServletRequest.getParameter("password");
         User user = new User(login,password);
+        ModelUsers modelUsers = ModelUsers.getInstance();
+        List<User> users = modelUsers.getModel();
+        httpServletRequest.setAttribute("users", users);
         httpServletRequest.getSession();
         if (!(user.getLogin().equals("")&&user.getPassword().equals(""))) {
             if (user.equals(ModelUsers.getInstance().getAdmin())) {

@@ -17,7 +17,7 @@ public class ModelUsers {
 
     private ModelUsers() {
         model = new ArrayList<>();
-        model.add(new User("admin","admin"));
+        model.add(new User("admin","admin", "admin"));
         model.add(new User("User","User","TestName"));
     }
 

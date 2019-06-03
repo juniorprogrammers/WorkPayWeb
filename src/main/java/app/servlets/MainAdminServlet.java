@@ -27,11 +27,4 @@ public class MainAdminServlet extends HttpServlet {
             requestDispatcher.forward(httpServletRequest,httpServletResponse);
         }
     }
-
-    @Override
-    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
-        ModelUsers modelUsers = ModelUsers.getInstance();
-        List<User> users = modelUsers.getModel();
-        httpServletRequest.setAttribute("users", users);
-    }
 }
