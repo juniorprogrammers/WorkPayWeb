@@ -68,36 +68,6 @@
                     <th>Пароль</th>
                     <th class="del"></th>
                 </tr>
-                <tr>
-                    <td class="cellfio">Админ</td>
-                    <td class="celllogin">admin</td>
-                    <td class="cellpassword">admin</td>
-                    <td class="del"><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td class="cellfio">Иванов Иван</td>
-                    <td class="celllogin">User</td>
-                    <td class="cellpassword">User</td>
-                    <td class="del"><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td class="cellfio">Иванов Иван</td>
-                    <td class="celllogin">User</td>
-                    <td class="cellpassword">User</td>
-                    <td class="del"><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td class="cellfio">Иванов Иван</td>
-                    <td class="celllogin">User</td>
-                    <td class="cellpassword">User</td>
-                    <td class="del"><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td class="cellfio">Иванов Иван</td>
-                    <td class="celllogin">User</td>
-                    <td class="cellpassword">User</td>
-                    <td class="del"><a href="#">X</a></td>
-                </tr>
 
             </table>
             </div>
