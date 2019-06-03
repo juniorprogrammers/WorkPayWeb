@@ -290,3 +290,7 @@ margin:1em;
 .gotouser {
     float: right;
 }
+
+.test button{
+    width: 30px;
+}

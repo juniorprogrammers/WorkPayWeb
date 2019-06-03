@@ -97,6 +97,7 @@
         </div>
         <div class="file" id="file">
             <h2>Пожалуйста загрузите файл с выручкой</h2>
+            <form method="get" action="/...">
             <div class="example-1">
                 <div class="form-group">
                     <label class="label">
@@ -106,6 +107,8 @@
                     </label>
                 </div>
             </div>
+                <button type="submit">Загрузить</button>
+            </form>
         </div>
         <div class="news" id="new">
             <h2>Добавление свежих новостей</h2>
