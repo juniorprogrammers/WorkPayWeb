@@ -97,13 +97,13 @@
         </div>
         <div class="file" id="file">
             <h2>Пожалуйста загрузите файл с выручкой</h2>
-            <form method="get" action="/...">
+            <form action="/mainAdminFile" method="post" enctype="multipart/form-data">
             <div class="example-1">
                 <div class="form-group">
                     <label class="label">
                         <i class="material-icons">attach_file</i>
                         <span class="title">Добавить файл</span>
-                        <input type="file">
+                        <input type="file" name="file">
                     </label>
                 </div>
             </div>

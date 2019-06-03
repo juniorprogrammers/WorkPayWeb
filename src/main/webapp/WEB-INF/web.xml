@@ -54,4 +54,14 @@
     <servlet-name>MainAdminDelServlet</servlet-name>
     <url-pattern>/mainAdminDel</url-pattern>
   </servlet-mapping>
+
+  <!-- mainAdminFileServlet -->
+  <servlet>
+    <servlet-name>MainAdminFileServlet</servlet-name>
+    <servlet-class>app.servlets.MainAdminFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainAdminFileServlet</servlet-name>
+    <url-pattern>/mainAdminFile</url-pattern>
+  </servlet-mapping>
 </web-app>
