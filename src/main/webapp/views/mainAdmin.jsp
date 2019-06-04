@@ -98,20 +98,14 @@
         <div class="file" id="file">
             <h2>Пожалуйста загрузите файл с выручкой</h2>
             <form action="/mainAdminFile" method="post" enctype="multipart/form-data">
-            <div class="example-1">
-                <div class="form-group">
-                    <label class="label">
-                        <i class="material-icons">attach_file</i>
-                        <span class="title">Добавить файл</span>
-                        <input type="file" name="file">
-                    </label>
-                </div>
-            </div>
+                <input type="file" name="file" />
                 <button type="submit">Загрузить</button>
             </form>
         </div>
         <div class="news" id="new">
-            <h2>Добавление свежих новостей</h2>
+            <h2><%
+                out.print(request.getAttribute("file"));
+            %></h2>
         </div>
     </div>
 </div>

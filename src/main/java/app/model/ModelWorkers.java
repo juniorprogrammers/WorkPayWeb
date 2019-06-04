@@ -1,7 +1,10 @@
+
 package app.model;
 
 import app.entities.Worker;
+import app.mechanics.ExcelParser;
 
+import java.io.File;
 import java.util.HashMap;
 
 public class ModelWorkers {
@@ -20,5 +23,9 @@ public class ModelWorkers {
 
     public void add (Worker worker) {
         map.put(worker.getName(),worker.getSells());
+    }
+
+    public void setMap(File file) {
+        this.map = ExcelParser.excelParse(file);
     }
 }

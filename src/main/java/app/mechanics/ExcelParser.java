@@ -9,9 +9,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 
-class ExcelParser {
+public class ExcelParser {
 
-    static HashMap<String, Integer> excelParse(File file) {
+   public static HashMap<String, Integer> excelParse(File file) {
         //инициализируем потоки
         HashMap<String, Integer> result = new HashMap<>();
         XSSFWorkbook workBook = null;
@@ -38,6 +38,8 @@ class ExcelParser {
             result.put(row.getCell(0).getStringCellValue(), (int) row.getCell(1).getNumericCellValue());
 
         }
+
+
 
         return result;
     }
